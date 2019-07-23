@@ -18,7 +18,8 @@ const messageTwo = document.querySelector('#message-2');
             messageOne.textContent = data.error;
         } else {
         messageOne.textContent = data.location;
-        messageTwo.textContent = data.forecast.Summary + ' Temperature: ' + data.forecast.Temperature + ' Precip probability: '+ data.forecast.PrecipProbability;
+        messageTwo.textContent = data.forecast.Summary + ' Temperature: ' + data.forecast.Temperature + ' Precip probability: '+ data.forecast.PrecipProbability+
+        ' Humidity: '+data.forecast.Humidity+ ' Pressure: '+data.forecast.Pressure;
         }
     });
 });
